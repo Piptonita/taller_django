@@ -1,0 +1,26 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+h1, h2{
+    margin: 0 auto;
+    color: green;
+}
+
+head{
+    height: 150px;
+    width: 100%;
+    background: grey;
+}
+
+footer{
+    height: 50px;
+    background: black;
+}
+
+footer small{
+    color: white;
+}

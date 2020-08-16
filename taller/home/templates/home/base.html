@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina personal del taller</title>
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+</head>
+<body>
+    <head>
+        <h1>Taller de Django</h1>
+    </head>
+    <nav>
+        <a href="{% url 'home' %}">Inicio</a>
+        <a href="{% url 'pagina_uno' %}">Pagina 1</a>
+        <a href="{% url 'pagina_dos' %}">Pagina 2</a>
+    </nav>
+    {% block cuerpo %}{% endblock %}
+    <footer>
+        <small>Gracias por ver mi taller!</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+
+{% block cuerpo %}
+<h3>Registrar un nuevo usuario</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{formulario.as_p}}
+    <button type="submit">Guardar Persona</button>
+    {% if ok %}
+        <p style="color:green">{{ ok }}</p>
+    {% endif %}
+    {% if error %}
+        <p style="color:green">{{ error }}</p>
+    {% endif %}
+</form>
+
+<hr>
+{{request.POST}}
+{% endblock %}

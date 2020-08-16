@@ -1,0 +1,23 @@
+{% extends 'home/base.html' %}
+
+{% block cuerpo %}
+<h3>Lista de personas</h3>
+<ul>
+    {% for persona in personas %}
+        <li>{{persona.nombre}}</li>
+        <li>{{persona.apellidos}}</li>
+        <li>{{persona.fecha_nacimiento}}</li>
+        <hr>
+    {% endfor %}
+</ul>
+<br><br>
+<hr>
+<h3>Datos de Paco</h3>
+<p>Se llama {{paco.nombre}} {{paco.apellidos}} y nació el {{paco.fecha_nacimiento}}</p>
+<br><br>
+<hr>
+<h3>Familia Martinez Orotava</h3>
+{% for m in mo %}
+    <p>{{ m.nombre }} {{m.apellidos}}, nació el {{ m.fecha_nacimiento }}</p>
+{% endfor %}
+{% endblock %}
