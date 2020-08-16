@@ -3,12 +3,14 @@
 {% block cuerpo %}
 <h3>Lista de personas</h3>
 <ul>
-    {% for persona in personas %}
-        <li>{{persona.nombre}}</li>
-        <li>{{persona.apellidos}}</li>
-        <li>{{persona.fecha_nacimiento}}</li>
-        <hr>
-    {% endfor %}
+    {% if persona %}
+        {% for persona in personas %}
+            <li>{{persona.nombre}}</li>
+            <li>{{persona.apellidos}}</li>
+            <li>{{persona.fecha_nacimiento}}</li>
+            <hr>
+        {% endfor %}
+    {% endif %}
 </ul>
 <br><br>
 <hr>
