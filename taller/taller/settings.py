@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '(x*qz-txbw_)zjj@$nj=zy%3$*jw%_bgobig3ab^*)xlgw@s+)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'tallerpython.pythonanywhere.com']
 
